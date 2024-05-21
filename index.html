@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showCongratsMessage() {
+            var name = document.getElementById("nameInput").value;
+            var message = "Congrats " + name + ", you're officially married to Muhammad Farras yang ganteng dan sangat kul. Thanks.";
+            document.getElementById("congratsMessage").innerText = message;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <label for="nameInput">Put your name Here:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="showCongratsMessage()">Submit</button>
+        <p id="congratsMessage"></p>
+    </div>
+</body>
+</html>
